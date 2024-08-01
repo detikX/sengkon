@@ -1,0 +1,190 @@
+.comic-wrapper {
+    padding: 1em 1em 4em;
+    background: #300606;
+    .helpbg {
+        position: absolute;
+        top: -16px;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: auto;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+    .row {
+        display: block;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        margin: 0;
+    }
+
+    .panel {
+        background-color: #860000;
+        border: solid 5px #ffffff;
+        // min-height: 300px;
+        margin: 0 1.5em 1.5em 0;
+        flex-grow: 1;
+        display: inline-block;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+    }
+
+    .panel:last-of-type {
+        margin-right: 0;
+    }
+
+    .panel-text {
+        padding: 1.5em;
+        flex-grow: 1;
+        p {
+            font-family: "Source Code Pro", sans-serif;
+        }
+    }
+
+    .panel-img {
+        flex-grow: 1;
+    }
+
+    .half {
+        width: 48%;
+        margin-right: 1em;
+        vertical-align: top;
+        display: inline-block;
+        @media screen and (max-width: 768px) {
+            margin-right: 0;
+            width: 100%;
+        }
+    }
+    // @media only screen and (min-width: 60em) {
+    //     .half {
+    //         flex-grow: 1;
+    //         width: auto;
+    //         margin-right: 1.5em;
+    //     }
+    // }
+
+    .onethird {
+        width: 100%;
+        margin-right: 0;
+    }
+    @media only screen and (min-width: 60em) {
+        .onethird {
+            flex-grow: 1;
+            width: auto;
+            margin-right: 1.5em;
+        }
+    }
+
+    .twothirds {
+        width: 100%;
+        margin-right: 0;
+    }
+    @media only screen and (min-width: 60em) {
+        .twothirds {
+            flex-grow: 2;
+            width: auto;
+            margin-right: 1.5em;
+        }
+    }
+
+    h2 {
+        display: inline-block;
+        padding: 0.25em;
+        background-color: #fff;
+        border: solid 5px #454546;
+        transform: skewX(-12deg) rotate(-3deg);
+        -webkit-box-shadow: 8px 8px 0px -1px #454546;
+        -moz-box-shadow: 8px 8px 0px -1px #454546;
+        box-shadow: 8px 8px 0px -1px #454546;
+    }
+
+    h2:after {
+        display: none;
+    }
+
+    h2.a {
+        padding: 0.25em 0.5em 0.125em 1.9em;
+        font-family: "Zain", sans-serif !important;
+        margin-left: 1em;
+        position: relative;
+    }
+
+    h2.a span {
+        /* Not semantic but :first-letter doesn't allow absolute positioning */
+        position: absolute;
+        display: inline;
+        font-family: "Zain", sans-serif !important;
+        font-size: 300%;
+        color: #118b8d;
+        top: -0.45em;
+        left: 0.125em;
+        text-shadow:
+            5px 5px 0 #454546,
+            5px 5px 0 #454546,
+            5px 5px 0 #454546,
+            5px 5px 0 #454546;
+    }
+
+    h2.b {
+        font-family: "classic-comic", sans-serif;
+        margin-left: 0.8em;
+    }
+
+    h2.c {
+        padding: 0 0.25em;
+        font-size: 3em;
+        letter-spacing: 0.01em;
+        font-family: "blambot-fx-pro", sans-serif;
+        margin-left: 0.5em;
+    }
+
+    .button {
+        font-family: "blambot-fx-pro", sans-serif;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 3em;
+        padding: 0.25em 0.5em;
+        margin: 0.5em 1em 0 0;
+        color: #fff;
+        background-color: #f16622;
+        transform: skewX(-12deg) rotate(-3deg);
+        -webkit-box-shadow: 8px 8px 0px -1px #454546;
+        -moz-box-shadow: 8px 8px 0px -1px #454546;
+        box-shadow: 8px 8px 0px -1px #454546;
+    }
+
+    .orange {
+        background-color: #f16622;
+    }
+
+    .gold {
+        background-color: #dc9931;
+    }
+
+    .orange:hover {
+        background-color: #ff7224;
+    }
+
+    .gold:hover {
+        background-color: #f4a338;
+    }
+
+    h2.a + .row {
+        margin-top: -3em;
+    }
+
+    h2.b + .row {
+        margin-top: -3em;
+    }
+
+    h2.c + .row {
+        margin-top: -4em;
+    }
+
+    h2 + .row > .panel:first-of-type {
+        padding-top: 2em;
+    }
+}
