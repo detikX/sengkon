@@ -1,5 +1,5 @@
 .comic-wrapper {
-    padding: 1em 1em 4em;
+    padding: 1em 1em 0em;
     background: #300606;
     .helpbg {
         position: absolute;
@@ -186,5 +186,19 @@
 
     h2 + .row > .panel:first-of-type {
         padding-top: 2em;
+    }
+}
+
+.credit {
+    padding: 0;
+    background: #300606;
+    min-height: auto;
+    text-align: center;
+    .alls {
+        margin-bottom: 8px;
+        color: white;
+        .jobs {
+            color: #ccc;
+        }
     }
 }
