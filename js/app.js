@@ -13,3 +13,10 @@ for (var i = 50; i--;) {
 tl.to(line, tl.duration() / 2, { opacity: R(0.1, 1), x: R(0, 300), ease: RoughEase.ease.config({ strength: 0.5, points: 10, randomize: true, taper: "none" }), repeat: 1, yoyo: true }, 0);
 
 function R(max, min) { return Math.random() * (max - min) + min };
+
+
+$(".container_mouse").click(function () {
+    $('html, body').animate({
+        scrollTop: $(".comic-wrapper").offset().top - 80
+    }, 600);
+});
