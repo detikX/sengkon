@@ -253,12 +253,13 @@
 }
 
 .credit {
-    padding: 0;
+    padding: 0 0 32px;
     background: #300606;
     min-height: auto;
     text-align: center;
     .alls {
         margin-bottom: 8px;
+        font-family: "Source Code Pro";
         color: white;
         .jobs {
             color: #ccc;
