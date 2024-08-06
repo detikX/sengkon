@@ -1,6 +1,21 @@
 .comic-wrapper {
     padding: 1em 1em 0em;
     background: #300606;
+    .jejak {
+        position: relative;
+        right: 0;
+        bottom: 0;
+        width: 250px;
+        z-index: 10;
+        height: auto;
+        float: right;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
 
     .polisi-tangkap {
         width: 120px;
