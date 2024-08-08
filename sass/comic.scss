@@ -1,6 +1,20 @@
 .comic-wrapper {
     padding: 1em 1em 0em;
     background: #300606;
+
+    .pembuka {
+        .panel {
+            border: 5px solid transparent;
+        }
+        p {
+            font-family: "Acme" !important;
+            text-align: center;
+            font-size: 1.6rem;
+            @media screen and (max-width: 768px) {
+                font-size: 1.3rem;
+            }
+        }
+    }
     .jejak {
         position: relative;
         right: 0;
