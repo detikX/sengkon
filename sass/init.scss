@@ -1,6 +1,6 @@
 // 003a70
 
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&family=Ubuntu&family=Rubik&family=Bevan&family=Source+Code+Pro:wght@400;900&family=Roboto+Slab&family=Zain&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Acme:wght@400;900&family=Ubuntu&family=Rubik&family=Bevan&family=Source+Code+Pro:wght@400;900&family=Roboto+Slab&family=Zain&display=swap");
 
 // $colorred: #560418;
 // $colorred: #7b2031; //jurno
@@ -316,25 +316,17 @@ section {
 
 #nav.no_index,
 #share {
-    z-index: 19 !important;
+    z-index: 21;
 }
+
 #nav.dark {
-    background: #7c181f !important;
+    background: linear-gradient(45deg, #460404, $colorred) !important;
 }
+
 .footer {
-    z-index: 19;
+    z-index: 22;
 }
-.share_icon {
-    color: white !important;
-    > a {
-        padding: 2px 0 !important;
-        @media screen and (max-width: 768px) {
-            padding: 0 !important;
-            width: 28px;
-            height: 28px;
-        }
-    }
-}
+
 .share_icon > a i {
     font-size: 25px !important;
     line-height: initial !important;
@@ -349,14 +341,17 @@ section {
 #nav {
     // background: rgb(105 84 29 / 80%) !important;
     // background: rgb(80, 80, 80, 0.8) !important;
-    backdrop-filter: blur(11px);
+    // backdrop-filter: blur(11px);
+    background: linear-gradient(45deg, #460404, $colorred) !important;
     @media screen and (max-width: 766px) {
         // backdrop-filter: initial;
         // background: rgb(80, 80, 80, 0.8) !important;
     }
 }
 .bg-blues {
-    background: $colorred !important;
+    background: #300606 !important;
+    position: relative;
+    z-index: 12;
 }
 
 .share_icon > a {
